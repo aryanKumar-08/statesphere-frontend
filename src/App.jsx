@@ -5,7 +5,7 @@ import {
 import { Layout, RequireAuth } from './Pages/layout/Layout';
 import HomePage from './Pages/homePage/HomePage';
 import ListPage from './Pages/listPage/ListPage';
-import SinglePage from './Pages/singlepage/SinglePage';
+import SinglePage from './Pages/singlePage/SinglePage';
 import LoginPage from './Pages/login/LoginPage';
 import ProfilePage from './Pages/profilePage/profilePage';
 import Register from './Pages/register/register';
