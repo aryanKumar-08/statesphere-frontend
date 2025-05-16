@@ -1,0 +1,119 @@
+@import "../../responsive.scss";
+
+.homePage {
+  display: flex;
+  height: 100%;
+
+  @include md {
+    flex-direction: column-reverse;
+  }
+
+  .textContainer {
+    flex: 3;
+
+    .wrapper {
+      padding-right: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 40px;
+      height: 100%;
+
+      @include lg {
+        padding-right: 30px;
+        gap: 30px;
+      }
+
+      @include md {
+        padding: 30px;
+        gap: 20px;
+      }
+
+      @include sm {
+        padding: 20px;
+        justify-content: flex-start;
+      }
+
+      .text{
+        font-size: 22px;
+      }
+
+      .title {
+        font-size: 52px;
+        line-height: 1.2;
+
+        @include lg {
+          font-size: 42px;
+        }
+
+        @include md {
+          font-size: 36px;
+        }
+
+        @include sm {
+          font-size: 32px;
+          margin-top: 20px;
+        }
+        span{
+          color: rgb(59, 59, 141);
+        }
+      }
+
+      .boxes {
+        display: flex;
+        justify-content: space-between;
+
+        @include sm {
+          display: none;
+        }
+
+        h1 {
+          font-size: 32px;
+
+          @include lg {
+            font-size: 28px;
+          }
+        }
+
+       
+
+        h2 {
+          font-size: 18px;
+          font-weight: 300;
+
+          @include lg {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .imgContainer {
+    flex: 2;
+    background-color: #fcf5f3;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    @include md {
+      display: none;
+    }
+
+    img {
+      width: 110%;
+      position: absolute;
+      right: 0;
+
+      @include lg {
+        width: 105%;
+      }
+    }
+  }
+}
+
+
+
+
+
+

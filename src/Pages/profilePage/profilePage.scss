@@ -1,0 +1,114 @@
+@import "../../responsive.scss";
+
+.profilePage {
+  display: flex;
+  height: 100vh;
+  padding: 20px;
+  gap: 20px;
+  
+  @include md {
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .details {
+    flex: 3;
+    padding-bottom: 50px;
+    overflow-y: auto;
+    
+    @include md {
+      flex: none;
+      height: auto;
+    }
+
+    .wrapper {
+      padding-right: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+
+      .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+          font-weight: 300;
+        }
+
+        button {
+          padding: 12px 24px;
+          background-color: #fece51;
+          cursor: pointer;
+          border: none;
+          border-radius: 5px;
+          font-weight: bold;
+          transition: background-color 0.3s;
+          
+          &:hover {
+            background-color: #e0b93b;
+          }
+        }
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        span {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+        }
+
+        button {
+          width: 100px;
+          background-color: teal;
+          border: none;
+          color: white;
+          padding: 10px 20px;
+          cursor: pointer;
+          border-radius: 5px;
+          font-weight: bold;
+        }
+
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  .chatContainer {
+    flex: 2;
+    background-color: #fcf5f3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+
+    @include md {
+      flex: none;
+      height: auto;
+    }
+
+    .wrapper {
+      padding: 0px 20px;
+      height: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .details .wrapper {
+      padding-right: 20px; // Adjust for smaller screens
+    }
+
+    .chatContainer {
+      padding: 15px;
+      border-radius: 5px;
+    }
+  }
+}
