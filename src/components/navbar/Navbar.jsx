@@ -8,8 +8,8 @@ function Navbar() {
   const [open, setOpen] = useState(false);
   const {currentUser} = useContext(AuthContext);
 
-  const fetch = useNotificationStore((state) => state.fetch);
-  const number = useNotificationStore((state) => state.number);
+  // const fetch = useNotificationStore((state) => state.fetch);
+  // const number = useNotificationStore((state) => state.number);
 
 
 
