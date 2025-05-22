@@ -15,7 +15,8 @@ function HomePage() {
           <SearchBar />
           <div className="boxes">
             <div className="box">
-              <h1>Years of Experience</h1>
+              <h1>2+</h1>
+              <h2>Years of Experience</h2>
 
             </div>
 
